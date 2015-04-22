@@ -16,10 +16,10 @@
         <nav>
             <ul>
                 <li><a href="#">Форум</a></li><!--
-			     --><li><a href="#">Албуми</a></li><!--
-			     --><li><a href="#">Конкурси</a></li><!--
-			     --><li><a href="#">Новини</a></li><!--
-			     --><li><a href="#">Потребители</a></li>
+                 --><li><a href="#">Албуми</a></li><!--
+                 --><li><a href="#">Конкурси</a></li><!--
+                 --><li><a href="#">Новини</a></li><!--
+                 --><li><a href="#">Потребители</a></li>
             </ul>
         </nav>
     </header>
@@ -49,11 +49,14 @@
 
         <section>
             <h2 id="block_title">Регистрация</h2>
-<!--            <p id="error_message">-->
-<!--                --><?php
-//				require 'reg_code.php';
-//				?>
-<!--            </p>-->
+            <p id="error_message">
+            <!--                -->
+                <?php
+                
+                require_once 'reg_code.php';
+                
+                ?>
+            </p>
 
 
             <form method="post">
@@ -66,24 +69,24 @@
                     <input type="password" name="password" id="password" maxlength="20" required="required" class="non_submit_input" />
                 </article>
                 <article>
-                    <label for="password2">Повтори паролата<span>*</span>:</label>
-                    <input type="password" name="password2" id="password2" maxlength="20" required="required" class="non_submit_input" />
+                    <label for="passwordValidation">Повтори паролата<span>*</span>:</label>
+                    <input type="password" name="passwordValidation" id="passwordValidation" maxlength="20" required="required" class="non_submit_input" />
                 </article>
                 <article>
                     <label for="realName">Име и фамилия<span>*</span>:</label>
-                    <input type="text" name="realname" id="realName" maxlength="60" required="required" class="non_submit_input" />
+                    <input type="text" name="realName" id="realName" maxlength="60" required="required" class="non_submit_input" />
                 </article>
                 <article>
-                    <label for="gender">Пол:</label>
-                    <select name="gender" id="gender">
-                        <option value="" /></option>
-                        <option value="female" />Жена</option>
-                        <option value="male">Мъж</option>
+                    <label for="gender">Пол<span>*</span>:</label>
+                    <select name="gender" id="gender" required="required">
+                        <option value="1">Мъж</option>
+                        <option value="2" />Жена</option>
+                        <option value="3">Друг</option>
                     </select>
                 </article>
                 <article>
-                    <label for="age">Възраст:</label>
-                    <input type="number" name="age" id="age" min="1" max="100">
+                    <label for="age">Възраст<span>*</span>:</label>
+                    <input type="number" name="age" id="age" min="1" required="required">
                 </article>
                 <article>
                     <label for="email">Email<span>*</span>:</label>
@@ -91,12 +94,12 @@
                            pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+" title="Невалиден email"/>
                 </article>
                 <article class="break">
-                    <label for="seqretQuestion">Таен въпрос:</label>
-                    <input type="text" id="seqretQuestion" name="seqretQuestion" maxlength="50" class="non_submit_input" />
+                    <label for="secretQuestion">Таен въпрос:</label>
+                    <input type="text" id="secretQuestion" name="secretQuestion" class="non_submit_input" />
                 </article>
                 <article>
-                    <label for="seqretAnswer">Таен отговор:</label>
-                    <input type="text" id="seqretAnswer" name="seqretAnswer" maxlength="50" class="non_submit_input" />
+                    <label for="secretAnswer">Таен отговор:</label>
+                    <input type="text" id="secretAnswer" name="secretAnswer" maxlength="20" class="non_submit_input" />
                 </article>
 
                 <!--<script src="scripts/formMessage.js" type="javascript"></script>-->
@@ -120,11 +123,11 @@
 
                 <?php
 
-				//require_once 'recaptchalib.php';
-				//$publickey = "6Lc-__YSAAAAAAK8fDz0wn2BgHakq16X5sgLXqc4";
-				//echo recaptcha_get_html($publickey);
+                //require_once 'recaptchalib.php';
+                //$publickey = "6Lc-__YSAAAAAAK8fDz0wn2BgHakq16X5sgLXqc4";
+                //echo recaptcha_get_html($publickey);
 
-				?>
+                ?>
 
                 <input type="submit" name="register" id="submit_registration" value="Регистрирай ме">
             </form>

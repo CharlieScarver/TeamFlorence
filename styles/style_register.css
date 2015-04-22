@@ -77,3 +77,10 @@ form a {
 form a:hover{
     color: #6E055F;
 }
+
+#error_message {
+    margin-bottom: 15px;
+    
+    font-size: 20px;
+    color: #B40404;
+}
