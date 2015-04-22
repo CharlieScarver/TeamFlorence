@@ -16,8 +16,8 @@ if(isset($_POST['register'])) { // If the Register button has been pressed
 	$password_validation = md5(htmlspecialchars(trim($_POST['passwordValidation']))); // Clean and Encrypt the Password
 	$realname = $_POST['realName']; 
 	$email = $_POST['email']; 
-	$gender = $_POST['gender'];
-	$age = $_POST['age'];
+	$gender = intval($_POST['gender']);
+	$age = intval($_POST['age']);
 	$date = date('Y-m-d'); 
 	$squestion = $_POST['secretQuestion']; 
 	$sanswer = $_POST['secretAnswer']; 
