@@ -1,0 +1,70 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  //width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.price{
+    font-size: 20px;
+    color:navy;
+}
+
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.actions{
+    margin-top:auto !important;
+}
+
+table td,tr,th,tbody,thead{
+    text-align: center !important; 
+}
+
+#pagination{
+    margin-bottom: 0px !important;
+    
+}
+
+.price{
+    color:#2e425a;
+    font-size:60px;
+}
+
+.jumbotron {
+  padding: 10px !important;
+}
+
+.logo{
+    width: 130px;
+    height: 50px;
+}
+.navbar-category {
+    padding: 0!important;
+    padding-right:15px !important;
+}
