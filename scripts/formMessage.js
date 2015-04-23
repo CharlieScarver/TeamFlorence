@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+function changeFieldValidationMessage(e) {
     var elements = document.getElementsByTagName("INPUT");
     for (var i = 0; i < elements.length; i++) {
         elements[i].oninvalid = function(e) {
@@ -11,4 +11,5 @@ document.addEventListener("DOMContentLoaded", function() {
             e.target.setCustomValidity("");
         };
     }
-})
+}
+

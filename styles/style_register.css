@@ -1,8 +1,12 @@
 section {
     padding: 10px;
+    width: 60%;
     min-height: 400px;
     background-color: #807A85;
+    border: 2px solid #DDD;
+    border-radius: 10px;
     box-sizing: border-box;
+    display: inline-block;
 }
 
 article {
@@ -11,6 +15,7 @@ article {
 
 article label {
     width: 160px;
+    vertical-align: top;
     display: inline-block;
 }
 
@@ -18,7 +23,8 @@ article label span {
     color: #3C073D;
 }
 
-input {
+section input,
+textarea {
     margin: 5px;
     width: 50%;
     height: 24px;
@@ -27,13 +33,18 @@ input {
     outline: none;
 }
 
-input:focus {
+textarea {
+    height: 150px;
+}
+
+section input:focus,
+textarea:focus {
     outline: none;
     background-color: #B3ACB5;
 }
 
 select,
-input[type='number'] {
+section input[type='number'] {
     margin: 5px;
     width: 20%;
     height: 24px;
@@ -46,7 +57,7 @@ input[type='number'] {
     margin-top: 20px;
 }
 
-input[type='submit'] {
+section input[type='submit'] {
     margin: 50px 25% 40px;
     padding: 10px 20px;
     height: auto;
@@ -58,7 +69,7 @@ input[type='submit'] {
     border-radius: 10px;
 }
 
-input[type='submit']:hover {
+section input[type='submit']:hover {
     color: #FFF;
     text-shadow: 1px 1px 5px #000;
     background-color: rgba(0,0,0,0.6);
