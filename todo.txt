@@ -1,0 +1,14 @@
+Login (Сашо: Ще го направя възможно най-скоро)
+
+User
+ - create post
+ - upload photos in album
+
+ Admin panel 
+  - create category
+  - delete post and category
+  - edit/update post and category
+  - delete user
+  - promote user to moderator
+
+
