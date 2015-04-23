@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2015 at 07:53 PM
+-- Generation Time: Apr 22, 2015 at 08:45 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -70,19 +70,19 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(100) NOT NULL,
   `real_name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `gender_id` bit(1) DEFAULT NULL,
+  `gender_id` int(1) DEFAULT NULL,
   `age` int(3) DEFAULT NULL,
   `joined_on` date NOT NULL,
   `secret_question` text,
   `secret_answer` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `real_name`, `email`, `gender_id`, `age`, `joined_on`, `secret_question`, `secret_answer`) VALUES
-(9, 'CharlieScarver', 'bf779e0933a882808585d19455cd7937', 'Alexander Apostolov', 's.apostolovd@gmail.com', b'1', 19, '2015-04-22', '', '');
+(9, 'CharlieScarver', 'bf779e0933a882808585d19455cd7937', 'Alexander Apostolov', 's.apostolovd@gmail.com', 1, 19, '2015-04-22', '', '');
 
 --
 -- Indexes for dumped tables
@@ -124,7 +124,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- Constraints for dumped tables
 --

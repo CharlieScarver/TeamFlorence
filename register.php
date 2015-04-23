@@ -80,7 +80,7 @@
                     <label for="gender">Пол<span>*</span>:</label>
                     <select name="gender" id="gender" required="required">
                         <option value="1">Мъж</option>
-                        <option value="2" />Жена</option>
+                        <option value="2">Жена</option>
                         <option value="3">Друг</option>
                     </select>
                 </article>
