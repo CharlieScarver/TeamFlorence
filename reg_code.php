@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 require_once '../config.php';
 
 $connect = mysql_connect($dbhost,$dbusr,$dbpw); //connect to DB
@@ -7,7 +6,6 @@ if (!$connect) { //Check is connection was successful
 	die("Failed to connect to MySQL!");
 }
 if (!mysql_select_db("charleston")) { //Check is DB selection was successful
-=======
 require_once 'config.php';
 
 $connect = mysql_connect($dbhost, $dbusr, $dbpw); //connect to DB
@@ -15,13 +13,11 @@ if (!$connect) { //Check is connection was successful
 	die("Failed to connect to MySQL!");
 }
 if (!mysql_select_db("d50shade_photography_forum")) { //Check is DB selection was successful
->>>>>>> 49715e746a045795f1a6b896ad443167f49d2370
 	die("Failed to select DB!");
 }
 
 if(isset($_POST['register'])) { // If the Register button has been pressed
 
-<<<<<<< HEAD
 	$username = $_POST['username']; 
 	$password = $_POST['password']; 
 	$realname = $_POST['realname']; 
@@ -45,7 +41,6 @@ if(isset($_POST['register'])) { // If the Register button has been pressed
 				secret question $squestion, <br/>
 				secret answer: $sanswer, <br/>
 				on $date. <br/>";
-=======
 	$username = htmlspecialchars(trim($_POST['username'])); // Clean the Username
 	$password = md5(htmlspecialchars(trim($_POST['password']))); 
 	$password_validation = md5(htmlspecialchars(trim($_POST['passwordValidation']))); // Clean and Encrypt the Password
@@ -135,7 +130,6 @@ if(isset($_POST['register'])) { // If the Register button has been pressed
 		} else {
 			echo "Passwords don't match!";
 		}
->>>>>>> 49715e746a045795f1a6b896ad443167f49d2370
 
 	} else {
 		echo "Please fill all required fields! <br/>Required field are marked by an asterisk (*).";

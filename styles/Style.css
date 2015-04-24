@@ -47,7 +47,6 @@ h1 a:hover {
     color: rgba(255, 255, 255, 0.8);
 }
 
->>>>>>> 49715e746a045795f1a6b896ad443167f49d2370
 nav {
     width: 100%;
     position: absolute;
@@ -55,14 +54,23 @@ nav {
     left: 0;
 }
 
-nav > ul {
+nav form input {
+    padding: 10px 35px;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    color: #000;
+    text-shadow: 1px 1px 5px #FFF;
 	background: rgba(255,255,255,0.2);
+    border: none;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     justify-content: space-around;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    display: inline;
 }
 
 nav > ul > li {
@@ -71,11 +79,8 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-<<<<<<< HEAD
 	padding: 8px 30px;
-=======
 	padding: 10px 38px;
->>>>>>> 49715e746a045795f1a6b896ad443167f49d2370
 	text-decoration: none;
 	font-size: 30px;
     font-family: 'Lobster', cursive;
@@ -85,6 +90,7 @@ nav > ul > li > a {
 
 nav > ul > li:hover a,
 nav > ul > li:active a {
+nav input:hover {
     color: #FFF;
     text-shadow: 1px 1px 5px #000;
 	background-color: rgba(0,0,0,0.6);
@@ -215,8 +221,10 @@ section a:hover {
 >>>>>>> 49715e746a045795f1a6b896ad443167f49d2370
 }
 
+=======
+>>>>>>> 86391e7e14735e4346f68bf40ac59400675f4bb5
 aside {
-    width: 16%;
+    width: 17%;
     padding: 10px;
     vertical-align: top;
     border: 2px solid #DDD;

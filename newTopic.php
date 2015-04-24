@@ -48,29 +48,41 @@
 
 
         <section>
-            <h2 id="block_title">Вход</h2>
-<!--            <p id="error_message">-->
-<!--                --><?php
-//				require 'reg_code.php';
-//				?>
-<!--            </p>-->
+            <h2 id="block_title">Нова тема</h2>
 
 
             <form method="post">
                 <article>
-                    <label for="username">Потребителско име:</label>
-                    <input type="text" name="username" id="username" maxlength="50" required="required" class="non_submit_input" />
+                    <label for="title">Заглавие:</label>
+                    <input type="text" name="title" id="title" required="required" />
                 </article>
                 <article>
-                    <label for="password">Парола:</label>
-                    <input type="password" name="password" id="password" maxlength="20" required="required" class="non_submit_input" />
+                    <label for="category">Категория:</label>
+                    <select name="category" id="category" required="required">
+                        <option selected disabled>Категория</option>
+                        <option value="1">Категория 1</option>
+                        <option value="2">Категория 2</option>
+                        <option value="3">Категория 3</option>
+                    </select>
                 </article>
-                <a href="#">Забравена парола</a>
+                <article>
+                    <label for="content">Съдържание:</label>
+                    <textarea name="content" id="content" required="required" ></textarea>
+                </article>
 
-                <input type="submit" name="register" id="submit_registration" value="Вход">
+
+
+                <?php
+
+                //require_once 'recaptchalib.php';
+                //$publickey = "6Lc-__YSAAAAAAK8fDz0wn2BgHakq16X5sgLXqc4";
+                //echo recaptcha_get_html($publickey);
+
+                ?>
+
+                <input type="submit" name="register" id="submit_registration" value="Създай тема">
             </form>
         </section>
-
 
 
         <aside class="photos">
@@ -113,10 +125,12 @@
     </footer>
 </div>
 
+
 <script src="scripts/formMessage.js" type="text/javascript"></script>
 <script>
     document.addEventListener("DOMContentLoaded", changeFieldValidationMessage)
 </script>
+
 
 </body>
 </html>
