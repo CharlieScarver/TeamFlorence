@@ -73,7 +73,7 @@
 =======
 <head>
     <meta charset="UTF-8" />
-    <title>Pretty Website</title>
+    <title>Photography Addicted</title>
     <link rel="stylesheet" type="text/css" href="styles/CSS-Reset.css">
     <link rel="stylesheet" type="text/css" href="styles/Style.css">
     <link rel="stylesheet" type="text/css" href="styles/style_register.css">
@@ -83,15 +83,15 @@
 <body>
 <div id="wrapper">
     <header>
-        <h1><a href="index.html">Photography Addicted</a></h1>
+        <h1><a href="index.php">Photography Addicted</a></h1>
         <nav>
-            <ul>
-                <li><a href="#">Форум</a></li><!--
-                 --><li><a href="#">Албуми</a></li><!--
-                 --><li><a href="#">Конкурси</a></li><!--
-                 --><li><a href="#">Новини</a></li><!--
-                 --><li><a href="#">Потребители</a></li>
-            </ul>
+            <form method="get" id="menu">
+                <input type="submit" name="page" value="Форум"/><!--
+                --><input type="submit" name="page" value="Албуми"/><!--
+                --><input type="submit" name="page" value="Конкурси"/><!--
+                --><input type="submit" name="page" value="Новини"/><!--
+                --><input type="submit" name="page" value="Потребители"/>
+            </form>
         </nav>
     </header>
 
@@ -120,14 +120,14 @@
 
         <section>
             <h2 id="block_title">Регистрация</h2>
-            <p id="error_message">
-            <!--                -->
-                <?php
-                
-                require_once 'reg_code.php';
-                
-                ?>
-            </p>
+<!--            <p id="error_message">-->
+<!--            <!--                -->
+<!--                --><?php
+//
+//                require_once 'reg_code.php';
+//
+//                ?>
+<!--            </p>-->
 
 
             <form method="post">
@@ -173,24 +173,6 @@
                     <input type="text" id="secretAnswer" name="secretAnswer" maxlength="20" class="non_submit_input" />
                 </article>
 
-                <!--<script src="scripts/formMessage.js" type="javascript"></script>-->
-                <!--The script above (a message for the required fields in cyrillic) as external file doesn't work. No idea why!-->
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        var elements = document.getElementsByTagName("INPUT");
-                        for (var i = 0; i < elements.length; i++) {
-                            elements[i].oninvalid = function(e) {
-                                e.target.setCustomValidity("");
-                                if (!e.target.validity.valid) {
-                                    e.target.setCustomValidity("Полето е задължително");
-                                }
-                            };
-                            elements[i].oninput = function(e) {
-                                e.target.setCustomValidity("");
-                            };
-                        }
-                    })
-                </script>
 
                 <?php
 
@@ -244,6 +226,14 @@
         <p>Some text, eventually</p>
     </footer>
 </div>
+
+
+<script src="scripts/formMessage.js" type="text/javascript"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", changeFieldValidationMessage)
+</script>
+
+
 </body>
 </html>
 >>>>>>> 49715e746a045795f1a6b896ad443167f49d2370
