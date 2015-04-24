@@ -1,9 +1,9 @@
 <?php
 
 ini_set('display_errors', 'On');
-define('DB_NAME', 'teamwork');
-define('DB_USER', 'User');
-define('DB_PASS', 'pass');
+define('DB_NAME', 'd50shade_photography_forum');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 
 function dbHolder() {
     $connection = new PDO('mysql:dbname=' . DB_NAME . ';host=localhost', DB_USER, DB_PASS, array(
