@@ -9,7 +9,7 @@ section {
     display: inline-block;
 }
 
-article {
+aside > form {
     width: 100%;
 }
 

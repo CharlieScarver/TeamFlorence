@@ -3,18 +3,19 @@ body {
 }
 
 #wrapper {
-    margin: 0 auto;
-    width: 960px;
-    position: relative;
-    font-family: Arial;
+	margin: 0 auto;
+	width: 960px;
+	position: relative;
+	font-family: Arial;
+    font-size: 16px;
 }
 
 header {
     margin-bottom: 2%;
-    width: 960px;
-    height: 400px;
-    background-image: url("../images/headerBackground.jpg");
-    background-size: 100%;
+	width: 960px;
+	height: 400px;
+	background-image: url("../images/headerBackground.jpg");
+	background-size: 100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -26,8 +27,8 @@ header {
 
 h1 {
     padding: 3% 0 0 4%;
-    font-size: 40px;
-    font-weight: 700;
+	font-size: 40px;
+	font-weight: 700;
     font-family: 'Lobster Two', cursive;
     text-shadow: 1px 0 5px #000;
 }
@@ -54,7 +55,7 @@ nav form input {
     font-family: 'Lobster', cursive;
     color: #000;
     text-shadow: 1px 1px 5px #FFF;
-    background: rgba(255,255,255,0.2);
+	background: rgba(255,255,255,0.2);
     border: none;
     display: -webkit-box;
     display: -moz-box;
@@ -62,7 +63,7 @@ nav form input {
     display: -webkit-flex;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+	flex-direction: row;
     flex-wrap: nowrap;
     display: inline;
 }
@@ -70,7 +71,7 @@ nav form input {
 nav input:hover {
     color: #FFF;
     text-shadow: 1px 1px 5px #000;
-    background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.6);
 }
 
 main {
@@ -88,18 +89,27 @@ aside {
     display: inline-block;
 }
 
+aside > form {
+    margin-bottom: 10px;
+    padding-bottom: 5px ;
+    border-bottom: 2px solid #DDD;
+}
+
+aside > form > input {
+    padding-left: 0;
+    font-size: 16px;
+    text-decoration: underline;
+    background-color: #B3ACB5;
+    border: none;
+    display: block;
+}
+
 aside div {
     margin: 5px 0;
 }
 
 aside p {
     padding-bottom: 2px;
-}
-
-aside .login {
-    margin-bottom: 10px;
-    padding-bottom: 5px ;
-    border-bottom: 2px solid #DDD;
 }
 
 h2 {
@@ -114,25 +124,27 @@ aside a {
     text-overflow: ellipsis;
 }
 
-aside a:hover {
+aside a:hover,
+aside > form > input:hover {
     color: #6E055F;
+    cursor: pointer;
 }
 
 footer {
-    margin-top: 20px;
+	margin-top: 20px;
     width: 960px;
     height: 100px;
     background: url("../images/headerBackground.jpg") 0 200px;
     background-size: 100%;
-    text-align: center;
+	text-align: center;
     text-shadow: 1px 1px 5px #FFF;
     color: #000;
     font-size: 30px;
-    line-height: 80px;
+	line-height: 80px;
 }
 
 footer a {
-    color: #000;
+	color: #000;
 }
 
 @media only screen and (max-width:1024px) {
@@ -140,28 +152,28 @@ footer a {
 }
 
 @media only screen and (max-width:960px) {
-    img {
-        background-size: cover;
-    }
+	img {
+		background-size: cover;
+	}
 }
 
 @media only screen and (max-width:768px) {
-    header > img {
-        width: 80%;
-        height: 80%;
-    }
+	header > img {
+		width: 80%;
+		height: 80%;
+	}
 }
 
 @media only screen and (max-width:640px) {
-
+	
 }
 
 @media only screen and (max-width:480px) {
-    header > img {
-        width: 50%;
-    }
+	header > img {
+		width: 50%;
+	}
 }
 
 @media only screen and (max-width:320px) {
-
+	
 }

@@ -126,7 +126,7 @@
 </div>
 
 
-<script src="scripts/formMessage.js" type="text/javascript"></script>
+<script src="js/formMessage.js" type="text/javascript"></script>
 <script>
     document.addEventListener("DOMContentLoaded", changeFieldValidationMessage)
 </script>
